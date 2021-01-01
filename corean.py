@@ -7,9 +7,10 @@ def menu():
     te preguntara ciertas letras y tu debes escribir la letra que según tú
     es la correcta
 
-    Selecciona una opción (1, 2)
+    Selecciona una opción (1, 2, 3)
         1 - Letras random 
         2 - Preguntar letras
+        3 - Salir
     """)
 
 def letra_random():
@@ -18,23 +19,25 @@ def letra_random():
     print(random.choice(letras_español))
 
 def main():
-    otra_vez = ''
     opcion = ''
     
     menu()
-
+    opcion = input('Introduce una opcion del menu: ')
     if opcion == '1':
+        otra_vez = ''
         while otra_vez != 'no':
             print('Te mostrare una letra en español y tu debes escribirla en coreano')
             letra_random()
 
             otra_vez = input('¿Quieres que te muestre otra letra? (si/no)')
             if otra_vez == 'no':
-                print('Adios!')
+                main()
                 break
     elif opcion == '2':
         print('Esta opcion esta en proceso, elige otra opcion')
         main()
+    elif opcion == '3':
+        print('Adios!')
     else:
         print('La opcion que elegiste no existe vuelve a intentarlo')
         main()
