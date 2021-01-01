@@ -32,7 +32,13 @@ def main():
             if otra_vez == 'no':
                 print('Adios!')
                 break
-        
+    elif opcion == '2':
+        print('Esta opcion esta en proceso, elige otra opcion')
+        main()
+    else:
+        print('La opcion que elegiste no existe vuelve a intentarlo')
+        main()
+
 
 if __name__ == "__main__":
     main()
