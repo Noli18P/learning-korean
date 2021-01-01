@@ -13,6 +13,9 @@ def main():
         letra_random()
 
         otra_vez = input('¿Quieres que te muestre otra letra? (si/no)')
+        if otra_vez == 'si':
+            print('Adios!')
+            break
         
 
 if __name__ == "__main__":
