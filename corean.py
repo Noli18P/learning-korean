@@ -16,7 +16,9 @@ def menu():
 def letra_random():
     letras_español = ['m','n','r','i','a','o abierta','u estirada','u','o', 
     'p con poco aire', 't con poco aire', 'k con poco aire', 's con poco aire', 'ch',
-    'ia', 'iu', 'io', 'io abierta', 'ui estirada']
+    'ia', 'iu', 'io', 'io abierta', 'ui estirada', 'p con mucho aire', 
+    't con mucho aire', 'k con mucho aire', 'h', 'ch con mucho aire', 'e abierta', 'e cerrada',
+    'ui', 'uo', 'ua']
 
     print(random.choice(letras_español))
 
